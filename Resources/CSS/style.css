@@ -16,6 +16,8 @@ blue: #3490DE for read more links
 white: #ffffff
 black: #000000
 
+google api key AIzaSyCs6rT_VVjyfX5dBnxWY5XXKQyb8LBXkvE
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1500827725695!6m8!1m7!1s1H78Wv1YJNdr2rPtgXsnvA!2m2!1d54.3439488311084!2d-7.635358064693378!3f310.243354077671!4f-9.52507538905617!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 */
 
 html {
@@ -25,11 +27,12 @@ body {
   font-family: "Quattrocento", Georgia, serif;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
+  background-color: #FFBF87;
 }
 nav,
 .banner,
-.conatainer {
+.container {
   max-width: 90rem;
 }
 h1, .logo ul li {
@@ -93,6 +96,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 nav ul {
   padding: 1.5rem 0;
@@ -121,7 +125,59 @@ nav ul li a {
   padding: 1rem 1.5rem;
 }
 
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
+.container {
+  background-color: #FFEDB2;
+  display: flex;
+}
+.container:nth-child(2n+1) {
+  background-color: #FFBF87;
+}
+.container h1,.container h2 {
+  color: #18587A;
+  font-size: 4rem;
+}
+.container h2{
+  font-size: 2.5rem;
+}
+
+/* welcome */
+.container#welcome {
+  background-image: url("../images/lightbulbideas.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#welcome .left {
+  margin: auto 2.5rem;
+  padding: 2rem;
+  background-color: rgba(255,191,135,0.7);
+}
+#welcome .left h2{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+#welcome .right {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+#welcomer img {
+  margin: auto;
+}
+#welcome .right:hover {
+  background-color: #18587A;
+  cursor:pointer;
+}
+#welcome .right: {
+  background-color: #18587A;
+  cursor:pointer;
+}
 
 
 
