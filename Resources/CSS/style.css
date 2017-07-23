@@ -49,7 +49,7 @@ h1{
 }
 
 /*header */
-header {
+header, footer {
   background-color: #FF4545;
 }
 /*  banner */
