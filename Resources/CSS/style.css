@@ -33,7 +33,9 @@ body {
 nav,
 .banner,
 .container {
-  width: 90rem;
+  display: flex;
+  max-width: 90rem;
+  margin: 0 auto;
 }
 h1, .logo ul li {
   font-family: "Quattrocento", Georgia, serif;
@@ -44,7 +46,7 @@ h1, .logo ul li {
   font-family: "Oswald", Helvetica, sans-serif;
   font-weight: 400;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 h1{
@@ -54,6 +56,7 @@ h1{
 /*header */
 header, footer {
   background-color: #FF4545;
+  justify-content: center;
 }
 /*  banner */
 .banner {
@@ -72,7 +75,7 @@ header, footer {
   margin: auto;
 }
 .logo img {
-  max-height: 7rem;
+  max-height: 10rem;
   margin: 0 auto;
 }
 
@@ -144,7 +147,7 @@ main {
   padding: auto;
 }
 .container:nth-child(2n+1) {
-  background-color: #FFBF87;
+  background-color: #FF4545;
 }
 .container h1,.container h2 {
   color: #18587A;
@@ -191,12 +194,132 @@ main {
 
 /* services */
 
-#serviceBrief.container {
+#servicesBrief.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  padding: 1rem;
+  margin: 2rem auto;
+}
+.service-list{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.service-list .thumbnail{
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 18rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: blue;
+}
+.thumbnail .information {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+  padding-bottom: 1.5rem;
+  background-color: rgba(255,191,135,0.7);
+
+}
+
+.thumbnail .information a{
+  color: #18587A;
+  font-weight: 700;
+}
+
+.thumbnail h1 {
+  font-size: 2.5rem;
+}
+.thumbnail h3{
   display: flex;
 }
 
+.thumbnail h3:hover {
+  display: block;
+}
 
 
+/* thumbnail pics */
+
+#AccPrep {
+  background-image: url("../images/AccPrep.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#SelfAss {
+  background-image: url("../images/SelfAss.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#TaxCr {
+  background-image: url("../images/TaxCr.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#DealTE {
+  background-image: url("../images/DealTE.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#CapGains {
+  background-image: url("../images/CapGains.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#VAT {
+  background-image: url("../images/VAT.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#BankNeg {
+  background-image: url("../images/BankNeg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#BusPlan {
+  background-image: url("../images/BusPlan.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#InTA {
+  background-image: url("../images/InTA.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#FarmAcc {
+  background-image: url("../images/FarmAcc.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 
